@@ -13,7 +13,7 @@ const db = firebase.firestore();
 const auth = firebase.auth();
 
 // Вставьте сюда ваш Email (как в Firebase Auth), чтобы система узнала в вас админа
-const ADMIN_EMAIL = "vash-email@gmail.com"; 
+const ADMIN_EMAIL = "netvoiyrovendorogoy@gmail.com"; 
 
 let currentUser = null;
 

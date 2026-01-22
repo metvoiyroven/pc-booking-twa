@@ -1,29 +1,49 @@
-body { 
-    font-family: 'Segoe UI', sans-serif; 
-    background: #0f0f0f; 
-    color: #e0e0e0; 
-    padding: 20px; 
-}
-h1 { color: #3498db; text-transform: uppercase; letter-spacing: 2px; }
-.pc-card { 
-    background: #1a1a1a;
-    border-radius: 20px; 
-    padding: 20px; 
-    margin: 15px auto; 
-    max-width: 350px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.5);
-    transition: 0.3s;
-}
-.free { border-top: 5px solid #2ecc71; }
-.busy { border-top: 5px solid #e74c3c; }
-button { 
-    background: linear-gradient(135deg, #3498db, #2980b9); 
-    color: white; 
-    border: none; 
-    padding: 12px 25px; 
-    border-radius: 12px; 
-    font-weight: bold;
-    cursor: pointer;
-    width: 100%;
-}
-button:hover { transform: scale(1.02); }
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeamPlay Booking</title>
+    
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-auth-compat.js"></script>
+
+    <style>
+        body { 
+            font-family: 'Segoe UI', sans-serif; 
+            background: #0f0f0f; 
+            color: #e0e0e0; 
+            padding: 20px; 
+            text-align: center;
+        }
+        h1 { color: #3498db; text-transform: uppercase; letter-spacing: 2px; }
+        .pc-card { 
+            background: #1a1a1a;
+            border-radius: 20px; 
+            padding: 20px; 
+            margin: 15px auto; 
+            max-width: 350px;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+            border-top: 5px solid #444;
+        }
+        .free { border-color: #2ecc71; }
+        .busy { border-color: #e74c3c; }
+        button { 
+            background: linear-gradient(135deg, #3498db, #2980b9); 
+            color: white; border: none; padding: 12px 25px; 
+            border-radius: 12px; font-weight: bold; cursor: pointer; width: 100%;
+        }
+        button:disabled { background: #555; cursor: not-allowed; }
+    </style>
+</head>
+<body>
+    <h1>TeamPlay Online</h1>
+    <div id="user-info"></div>
+    <div id="pc-list">Загрузка системы...</div>
+
+    <script src="app.js"></script>
+</body>
+</html>

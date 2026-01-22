@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TeamPlay Booking</title>
+    <script src="https://telegram.org/js/telegram-web-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-app-compat.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/10.7.1/firebase-firestore-compat.js"></script>
+    <style>
+        body { font-family: sans-serif; background: #1c1c1c; color: white; text-align: center; }
+        .pc-card { border-radius: 15px; padding: 20px; margin: 15px; border: 2px solid #444; }
+        .free { background: #2ecc7122; border-color: #2ecc71; }
+        .busy { background: #e74c3c22; border-color: #e74c3c; }
+        button { background: #3498db; color: white; border: none; padding: 10px 20px; border-radius: 8px; font-weight: bold; }
+        button:disabled { background: #555; }
+    </style>
+</head>
+<body>
+    <h1>TeamPlay Online</h1>
+    <div id="pc-list">Загрузка ПК...</div>
+
+    <script src="app.js"></script>
+</body>
+</html>
